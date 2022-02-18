@@ -15,7 +15,7 @@ export const SocialButton = ({ link, icon, bgColor }: SocialButtonProps) => {
     <>
       <a href={link.href} className={frame}>
         {icon && (
-            <img className={'absolute left-4 h-4 mr-auto'} src={icon} alt={link.text} />
+          <img className={'absolute left-4 h-4 mr-auto'} src={icon} alt={link.text} />
         )}
         <span className={'font-bold text-white'}>{link.text}</span>
       </a>

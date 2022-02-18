@@ -1,9 +1,9 @@
+import about from '@/assets/bg/about.png';
+import experience from '@/assets/bg/experience.png';
+import works from '@/assets/bg/works.png';
 import icon from '@/assets/link.svg';
 import { SocialButton, SocialButtonProps } from '@/components/SocialButton/SocialButton';
 import { TileButton, TileButtonProps } from '@/components/TileButton/TileButton';
-import about from'@/assets/bg/about.png'
-import works from'@/assets/bg/works.png'
-import experience from'@/assets/bg/experience.png'
 
 const socialButtonData: TileButtonProps[] = [
   {

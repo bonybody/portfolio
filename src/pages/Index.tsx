@@ -2,8 +2,8 @@ import '@/App.css';
 
 import React from 'react';
 
-import { SocialButtonList } from '@/components/SocialButton';
 import logo from '@/assets/logo.svg';
+import { SocialButtonList } from '@/components/SocialButton';
 import { TopTileButtons } from '@/components/TileButton/TopTileButtons';
 
 export const Index = () => {
