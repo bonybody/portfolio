@@ -1,17 +1,27 @@
 import React from 'react';
-import { useRoutes } from 'react-router-dom';
+import { Route, Routes, useRoutes } from 'react-router-dom';
 
+import { MainLayout } from '../components/Layout/MainLayout';
 import { Index } from '../pages/Index';
 
 export const routes = [
   {
     path: '/',
-    element: <Index />,
+    element: <MainLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Index />,
+      },
+      {
+        path: '/a',
+      },
+    ],
   },
 ];
 
 export const AppRoutes = () => {
-  const element = useRoutes([...routes]);
+  const element = useRoutes(routes);
 
   return <>{element}</>;
 };
